@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>随机笑话生成器</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>随机笑话生成器</h1>
+
+    <div class="controls">
+      <label for="api">选择 API:</label>
+      <select id="api">
+        <option value="icanhaz">icanhazdadjoke（短梗）</option>
+        <option value="official">Official Joke API（问答式）</option>
+      </select>
+
+      <button id="getJoke">获取笑话</button>
+      <button id="copyBtn">复制</button>
+    </div>
+
+    <div id="joke" class="joke">点击“获取笑话”开始</div>
+    <div id="error" class="error" aria-live="polite"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
